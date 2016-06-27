@@ -17,8 +17,8 @@
 
         <div ng-app="criterioME" ng-controller="ctrl">
             <h2>Nueva noticia</h2>
-            Titulo: <input type="text" ng-model="txtTitulo" name="text"/>
-            Noticia: <input type="text" ng-model="txtNoticia" ng-enter="agregarNoticia()" name="text" />
+            Titulo: <input type="text" ng-model="txtTitulo" name="text" maxlength="15"/>
+            Noticia: <input type="text" ng-model="txtNoticia" ng-enter="agregarNoticia()" name="text" maxlength="85"/>
             <input type="button" value="+" ng-click="agregarNoticia()" ng-disabled="txtNoticia=='' || txtTitulo==''">
             <br />
             <h2>Noticias que se muestran actualmente</h2>
